@@ -1,0 +1,6 @@
+framework module Pods_AlgorithmStudy_Swift {
+  umbrella header "Pods-AlgorithmStudy_Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

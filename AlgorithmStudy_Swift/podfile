@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target ‘AlgorithmStudy_Swift’ do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  #use_frameworks!
+
+  source 'https://github.com/CocoaPods/Specs.git'
+  platform :ios, '10.0'
+  use_frameworks!
+
+  # Pods for AlgorithmStudy_Swift
+    pod 'RealmSwift'
+    # Pods for testing
+
+  target 'AlgorithmStudy_SwiftTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+end
