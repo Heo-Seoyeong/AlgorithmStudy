@@ -16,6 +16,9 @@
 		365DD3261E81460A0059C4F6 /* RedBlackTreeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365DD3251E81460A0059C4F6 /* RedBlackTreeController.swift */; };
 		365DD3281E81461B0059C4F6 /* RedBlackTreeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365DD3271E81461B0059C4F6 /* RedBlackTreeModel.swift */; };
 		365DD32A1E81470C0059C4F6 /* RedBlackTreeUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365DD3291E81470C0059C4F6 /* RedBlackTreeUnitTest.swift */; };
+		36FFA2DB1E94DB6C008A9CBF /* HeapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FFA2D91E94DB6C008A9CBF /* HeapController.swift */; };
+		36FFA2DC1E94DB6C008A9CBF /* HeapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FFA2DA1E94DB6C008A9CBF /* HeapModel.swift */; };
+		36FFA2DE1E94DB91008A9CBF /* HeapUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FFA2DD1E94DB91008A9CBF /* HeapUnitTest.swift */; };
 		3DCEBA953502DD2DC43CAB51 /* Pods_AlgorithmStudy_SwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A9BC510AE8AECC01BA0059 /* Pods_AlgorithmStudy_SwiftTests.framework */; };
 		F52479631B253CDE6AFDBF59 /* Pods_AlgorithmStudy_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24C2701ACAF329C46C930BE /* Pods_AlgorithmStudy_Swift.framework */; };
 /* End PBXBuildFile section */
@@ -46,6 +49,9 @@
 		365DD3251E81460A0059C4F6 /* RedBlackTreeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedBlackTreeController.swift; sourceTree = "<group>"; };
 		365DD3271E81461B0059C4F6 /* RedBlackTreeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedBlackTreeModel.swift; sourceTree = "<group>"; };
 		365DD3291E81470C0059C4F6 /* RedBlackTreeUnitTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedBlackTreeUnitTest.swift; sourceTree = "<group>"; };
+		36FFA2D91E94DB6C008A9CBF /* HeapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeapController.swift; sourceTree = "<group>"; };
+		36FFA2DA1E94DB6C008A9CBF /* HeapModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeapModel.swift; sourceTree = "<group>"; };
+		36FFA2DD1E94DB91008A9CBF /* HeapUnitTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeapUnitTest.swift; sourceTree = "<group>"; };
 		70149839F424882950EEE3EB /* Pods-AlgorithmStudy_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlgorithmStudy_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlgorithmStudy_Swift/Pods-AlgorithmStudy_Swift.release.xcconfig"; sourceTree = "<group>"; };
 		92A9BC510AE8AECC01BA0059 /* Pods_AlgorithmStudy_SwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlgorithmStudy_SwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CD4ACC33DD6E68A3AD997B /* Pods-AlgorithmStudy_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlgorithmStudy_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlgorithmStudy_Swift/Pods-AlgorithmStudy_Swift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				365DD3051E8145E10059C4F6 /* AppDelegate.swift */,
-				365DD3251E81460A0059C4F6 /* RedBlackTreeController.swift */,
-				365DD3271E81461B0059C4F6 /* RedBlackTreeModel.swift */,
+				36FFA2D81E94DB54008A9CBF /* Heap */,
+				368B68D61E8B2C230079133F /* RedBlackTree */,
 				365DD3071E8145E10059C4F6 /* ViewController.swift */,
 				365DD3091E8145E10059C4F6 /* Main.storyboard */,
 				365DD30C1E8145E10059C4F6 /* Assets.xcassets */,
@@ -112,9 +118,28 @@
 			children = (
 				365DD31A1E8145E10059C4F6 /* AlgorithmStudy_SwiftTests.swift */,
 				365DD3291E81470C0059C4F6 /* RedBlackTreeUnitTest.swift */,
+				36FFA2DD1E94DB91008A9CBF /* HeapUnitTest.swift */,
 				365DD31C1E8145E10059C4F6 /* Info.plist */,
 			);
 			path = AlgorithmStudy_SwiftTests;
+			sourceTree = "<group>";
+		};
+		368B68D61E8B2C230079133F /* RedBlackTree */ = {
+			isa = PBXGroup;
+			children = (
+				365DD3251E81460A0059C4F6 /* RedBlackTreeController.swift */,
+				365DD3271E81461B0059C4F6 /* RedBlackTreeModel.swift */,
+			);
+			name = RedBlackTree;
+			sourceTree = "<group>";
+		};
+		36FFA2D81E94DB54008A9CBF /* Heap */ = {
+			isa = PBXGroup;
+			children = (
+				36FFA2D91E94DB6C008A9CBF /* HeapController.swift */,
+				36FFA2DA1E94DB6C008A9CBF /* HeapModel.swift */,
+			);
+			name = Heap;
 			sourceTree = "<group>";
 		};
 		4B288E3109779D2977C8EB15 /* Pods */ = {
@@ -194,6 +219,7 @@
 					365DD3011E8145E10059C4F6 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 2H63TGHS2A;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					365DD3151E8145E10059C4F6 = {
@@ -341,6 +367,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36FFA2DB1E94DB6C008A9CBF /* HeapController.swift in Sources */,
+				36FFA2DC1E94DB6C008A9CBF /* HeapModel.swift in Sources */,
 				365DD3081E8145E10059C4F6 /* ViewController.swift in Sources */,
 				365DD3261E81460A0059C4F6 /* RedBlackTreeController.swift in Sources */,
 				365DD3061E8145E10059C4F6 /* AppDelegate.swift in Sources */,
@@ -352,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36FFA2DE1E94DB91008A9CBF /* HeapUnitTest.swift in Sources */,
 				365DD31B1E8145E10059C4F6 /* AlgorithmStudy_SwiftTests.swift in Sources */,
 				365DD32A1E81470C0059C4F6 /* RedBlackTreeUnitTest.swift in Sources */,
 			);
@@ -485,11 +514,14 @@
 			baseConfigurationReference = A4CD4ACC33DD6E68A3AD997B /* Pods-AlgorithmStudy_Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2H63TGHS2A;
 				INFOPLIST_FILE = AlgorithmStudy_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.favorie.AlgorithmStudy-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AlgorithmStudy_Swift/AlgorithmStudy_Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -499,11 +531,13 @@
 			baseConfigurationReference = 70149839F424882950EEE3EB /* Pods-AlgorithmStudy_Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2H63TGHS2A;
 				INFOPLIST_FILE = AlgorithmStudy_Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.favorie.AlgorithmStudy-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AlgorithmStudy_Swift/AlgorithmStudy_Swift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -559,6 +593,7 @@
 				365DD3211E8145E10059C4F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		365DD3221E8145E10059C4F6 /* Build configuration list for PBXNativeTarget "AlgorithmStudy_SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -567,6 +602,7 @@
 				365DD3241E8145E10059C4F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

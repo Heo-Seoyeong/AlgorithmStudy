@@ -55,7 +55,7 @@ class RedBlackTreeUnitTest: XCTestCase {
         let minNode = rbtcontroller?.RBT_SearchMinNode(tree: (treeHead?.tree)!)
         let threeNode = rbtcontroller?.RBT_SearchNode(tree: (treeHead?.tree)!, tarket: 3)
         
-        print("minNode : \(minNode!.data)")
+        print("minNode : \(minNode!.data!)")
         print("threeNode : \(threeNode!.data)")
 
         // This is an example of a functional test case.

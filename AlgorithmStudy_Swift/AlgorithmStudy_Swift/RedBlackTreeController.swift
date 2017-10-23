@@ -116,7 +116,7 @@ class RedBlackTreeController {
     
     func RBT_Rotateleft(Root: RedBlackTreeHead, parent: RedBlackTreeNode) {
         let rightChild = parent.right
-        var Root = Root
+        let Root = Root
         
         parent.right = rightChild?.left
         
@@ -271,9 +271,11 @@ class RedBlackTreeController {
         
         
         print("\(br) \(Node.data!) \(Node.color!) [\(c),\(v)] \(cnt!)")
+       
         if (Node.right != nil){
             RBT_PrintTree(Node: Node.right!, Depth: Depth+1, BlackCount: BlackCount)
         }
+        
         if (Node.left != nil){
             RBT_PrintTree(Node: Node.left!, Depth: Depth+1, BlackCount: BlackCount)
         }
